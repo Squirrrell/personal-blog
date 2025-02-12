@@ -1,22 +1,25 @@
-import AnimatedPage from "./components/AnimatedPage"
 import Link from "next/link"
 
 export default function Home() {
   return (
-    <AnimatedPage>
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-6 text-foreground">Welcome to My Personal Blog</h1>
-        <p className="text-xl mb-8 text-foreground">
-          Hi, I'm [Your Name]. I'm a [Your Profession] passionate about [Your Interests].
-        </p>
+    <div className="text-center space-y-8">
+      <h1 className="text-4xl font-bold mb-6 text-foreground">Welcome to My Personal Blog</h1>
+      <p className="text-xl mb-8 text-muted-foreground">
+        Hi, I'm [Your Name]. I'm a [Your Profession] passionate about [Your Interests].
+      </p>
+      <div className="relative inline-block group">
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
         <Link
           href="/about"
-          className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors duration-200"
+          className="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600"
         >
-          Learn More About Me
+          <span className="flex items-center space-x-5">
+            <span className="pr-6 text-gray-100">Learn More About Me</span>
+          </span>
+          <span className="pl-6 text-primary group-hover:text-gray-100 transition duration-200">&rarr;</span>
         </Link>
       </div>
-    </AnimatedPage>
+    </div>
   )
 }
 
