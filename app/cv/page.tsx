@@ -3,28 +3,32 @@ import AnimatedPage from "../components/AnimatedPage"
 export default function CV() {
   const experiences = [
     {
-      title: "Software Engineer",
-      company: "Tech Company",
-      period: "2020 - Present",
-      description: "Developed and maintained web applications using React and Node.js.",
-    },
-    {
-      title: "Junior Developer",
-      company: "Startup Inc.",
-      period: "2018 - 2020",
-      description: "Worked on front-end development using HTML, CSS, and JavaScript.",
+      title: "Personal Projects & Development",
+      company: "Self-Directed",
+      period: "2023 - Present",
+      description: "Working on personal projects involving web development.\n Exploring programming languages such as JavaScript, Python, and Java.\n Developing problem-solving skills through competitive programming and university coursework.",
     },
   ]
 
   const education = [
     {
       degree: "Bachelor of Science in Computer Science",
-      school: "University Name",
-      year: "2018",
+      school: "Alexandru Ioan Cuza University of Iași (UAIC)",
+      year: " 2023 - Present",
+    },
+    {
+      degree: "High School Diploma - Mathematics & Computer Science",
+      school: "National College \"Costache Negruzzi\" Iași",
+      year: "2019 - 2023",
+    },
+    {
+      degree: "Middle School",
+      school: "National College \"Costache Negruzzi\" Iași",
+      year: "2015 - 2019",
     },
   ]
 
-  const skills = ["JavaScript", "React", "Node.js", "Python", "Git"]
+  const skills = ["C++", "Python", "Git"]
 
   return (
     <AnimatedPage>
@@ -38,7 +42,7 @@ export default function CV() {
             <p className="text-primary-600">
               {exp.company} | {exp.period}
             </p>
-            <p>{exp.description}</p>
+            <p className="whitespace-pre-line">{exp.description}</p>
           </div>
         ))}
       </section>

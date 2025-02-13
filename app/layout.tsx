@@ -8,7 +8,7 @@ import Script from "next/script"
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
 export const metadata = {
-  title: "Your Name - Personal Blog",
+  title: "Dobos Denis - Personal Blog",
   description: "Personal blog, CV, and projects showcase",
 }
 

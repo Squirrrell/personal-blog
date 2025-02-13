@@ -3,10 +3,10 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of Project 1",
-    image: "/placeholder.svg?height=200&width=300",
-    link: "#",
+    title: "Project Group",
+    description: "University project for the LFAC course \n Collaborator: Munteanu Stefan",
+    image: "/flex_yacc.png?height=200&width=300",
+    link: "https://github.com/steve-warlock/LFAC-Project",
   },
   {
     title: "Project 2",
@@ -38,7 +38,7 @@ export default function Projects() {
             />
             <div className="p-4">
               <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-              <p className="text-primary-200 mb-4">{project.description}</p>
+              <p className="text-primary-200 mb-4 whitespace-pre-line">{project.description}</p>
               <a
                 href={project.link}
                 className="inline-block bg-primary text-secondary px-4 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors duration-200"
