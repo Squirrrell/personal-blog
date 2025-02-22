@@ -1,1 +1,1 @@
-Personal Blog for the funny. 
+Yupiiiiii.
