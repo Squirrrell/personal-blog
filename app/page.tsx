@@ -5,7 +5,7 @@ export default function Home() {
     <div className="text-center space-y-8">
       <h1 className="text-4xl font-bold mb-6 text-foreground">Welcome to My Personal Blog</h1>
       <p className="text-xl mb-8 text-muted-foreground">
-        Hi, I'm Denis. I'm a Computer Science student passionate about Artificial Intelligence.
+        Hi, I'm Denis. I'm a Computer Science student passionate about Computer Science.
       </p>
       <div className="relative inline-block group">
         <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>

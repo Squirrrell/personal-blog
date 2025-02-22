@@ -9,16 +9,10 @@ const projects = [
     link: "https://github.com/steve-warlock/LFAC-Project",
   },
   {
-    title: "Project 2",
-    description: "A brief description of Project 2",
-    image: "/placeholder.svg?height=200&width=300",
-    link: "#",
-  },
-  {
-    title: "Project 3",
-    description: "A brief description of Project 3",
-    image: "/placeholder.svg?height=200&width=300",
-    link: "#",
+    title: "Autoclicker",
+    description: "A simple autoclicker made in Python. \n Still in development.",
+    image: "/mouse2.png?height=200&width=300",
+    link: "https://github.com/Squirrrell/autoclicker",
   },
 ]
 
@@ -29,13 +23,16 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <div key={index} className="bg-secondary rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src={project.image || "/placeholder.svg"}
-              alt={project.title}
-              width={300}
-              height={200}
-              className="w-full h-48 object-cover"
-            />
+            <div className="relative h-48 w-full">
+              <Image
+                src={project.image || "/placeholder.svg"}
+                alt={project.title}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-contain p-2"  // Changed from object-cover to object-contain and added padding
+                priority
+              />
+            </div>
             <div className="p-4">
               <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
               <p className="text-primary-200 mb-4 whitespace-pre-line">{project.description}</p>
