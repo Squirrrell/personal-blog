@@ -9,7 +9,7 @@ export default function About() {
       <h1 className="text-3xl font-bold mb-6">About Me</h1>
       <div className="space-y-4 mb-12">
         <p>
-          Hello! I'm Dobos Denis, a Computer Science student based in Iasi, Romania. I have a passion for Artificial Intelligence
+          Hello! I'm Dobos Denis, a Computer Science student based in Iasi, Romania. I have a passion for Computer Science
           and I'm always excited to take on new challenges and learn new technologies.
         </p>
         <p>
