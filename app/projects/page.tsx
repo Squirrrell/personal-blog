@@ -10,7 +10,7 @@ const projects = [
   },
   {
     title: "Autoclicker",
-    description: "A simple autoclicker made in Python. \n Still in development.",
+    description: "A simple autoclicker made in Python.",
     image: "/mouse2.png?height=200&width=300",
     link: "https://github.com/Squirrrell/autoclicker",
   },

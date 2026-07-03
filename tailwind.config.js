@@ -46,6 +46,18 @@ module.exports = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: "0", transform: "translateY(8px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 0.5s ease-out forwards",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
