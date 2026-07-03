@@ -14,6 +14,12 @@ const projects = [
     image: "/mouse2.png?height=200&width=300",
     link: "https://github.com/Squirrrell/autoclicker",
   },
+  {
+    title: "Rezumat PDF",
+    description: "A local web app for summarizing research PDFs and asking questions about their content.\nBuilt with FastAPI, React, and small ML models.",
+    image: "/rezumat_pdf.png?height=300width=450",
+    link: "https://github.com/Squirrrell/Rezumat_PDF",
+  },
 ]
 
 export default function Projects() {
